@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+header {
+  background-color: lightgrey;
+  padding: 0;   
+}
+
+img {
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 0px 0px grey;
+}
+
+h1 {
+  font-size: 2.9em;
+  color: grey;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+a {
+  display: inline-block;
+  width: 17%;
+  font-size: 2em;
+  padding: 10px;
+  background-color: grey;
+  text-decoration: none;
+  border-radius: 10px;
+  color: black;
+  font-family: 'Zen Old Mincho', serif;
+  transition-property: color, border-radius, box-shadow;
+  transition-duration: 350ms, 150ms, 300ms;
+  transition-timing-function: ease-in-out;
+  box-shadow: 5px 5px 0px 0px lightgray;
+}
+
+a:hover {
+  color: white;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.welcome-div h1 {
+  display: inline-block;
+  width: 50%;
+  vertical-align: text-bottom;
+}
+
+.welcome-div hr {
+  border: 2px solid black;
+  margin: 8px;
+}
+
+.article-body {
+  height: 100%;
+  width: 100%;
+}
+
+.article-body a {
+  margin-bottom: 10px;
+}
+
+.article-div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.article-div p {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  letter-spacing: .2px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.article-div footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.article-div hr {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.grouped-article-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.advert-div {
+  display: inline-block;
+  background-color: lightgray;
+  border: 2px solid black;
+  position: relative;
+}
+
+.advert-div a {
+  font-size: 1em;
+}
+
+.advert-6 {
+  display: inline-block;
+  width: 40%;
+}
+
+.group-adverts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.about-us-div h1 {
+  font-size: 3em;
+  font-family: 'MuseoModerno', cursive;
+}
+
+.grouped-authors {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-size: 2em;
+}
+
+.grouped-authors div {
+  border: 1px solid black;
+  padding: 20px
+}
+
+.opening-images {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-evenly;
+  animation: image-anim 1.2s ease-in-out;
+}
+
+.schedule {
+  display: inline-flex;
+  border: 3px solid black;
+  width: 75%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.schedule h2 {
+  font-size: 3.2em;
+}
+
+.schedule ul {
+  text-align: right;
+  list-style: none;
+}
+
+.schedule ul li {
+  font-size: 1.4em;
+  line-height: 2em;
+}
+
+.citation-card {
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.citation-card h5 {
+  font-size: 1.5em;
+}
+
+.citation-card p {
+  font-size: 1em;
+}
+
+.citation-card a {
+  display: inline;
+  background-color: transparent;
+  font-size: 1em;
+  color: blue;
+}
+
+.grouped-citations {
+  display: flex;
+}
+
+.article-images {
+  display: block;
+  margin: 0 auto;
+}
+
+.article-5-images {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.advert-6 {
+  width: 90%;
+}
+
+.article-6 {
+  display: inline-block;
+}
+
+.logo {
+  display: inline-block;
+  width: 80px;
+  animation: image-anim 1.2s ease-in-out;
+}
+
+@media screen and (max-width: 4200px) {
+  .article-5-images {
+    width: 2500px;
+  }
+}
+
+@media screen and (max-width: 2500px) {
+  .article-5-images {
+    width: 2000px;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .article-5-images {
+    width: 1450px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .article-5-images {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .opening-images img {
+    height: 150px;
+  }
+
+  .article-5-images {
+    width: 745px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .schedule h2 {
+    font-size: 2.2em;
+  }
+  
+  .schedule ul li {
+    font-size: 1em;
+  }
+
+  .advert-6 {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .grouped-article-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grouped-authors {
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+
+  .grouped-citations {
+    flex-direction: column;
+  }
+
+  .citation-card {
+    width: 75%;
+  }
+
+  a {
+    margin: 10px;
+    width: 50%;
+  }
+
+  .article-5-images {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .schedule h2 {
+    font-size: 1.8em;
+  }
+
+  .schedule ul li {
+    font-size: .75em;
+  }
+  
+  .group-adverts {
+    flex-direction: column;
+  }
+
+  .article-images {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .opening-images img {
+    height: 50px;
+  }
+
+  .article-5-images {
+    width: 345px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .schedule h2 {
+    font-size: 1.5em;
+  }
+
+  .schedule ul li {
+    font-size: .6em;
+  }
+
+  .logo {
+    width: 55px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .advert-div {
+    font-size: .59em;
+  }
+
+  .grouped-authors {
+    font-size: 1em;
+  }
+
+  .about-us-div h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  a {
+    font-size: 2em;
+  }
+  
+  .article-images {
+    height: 250px;
+  }
+
+  .article-5-images {
+    width: 275px;
+  }
+}
+
+@keyframes image-anim {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
